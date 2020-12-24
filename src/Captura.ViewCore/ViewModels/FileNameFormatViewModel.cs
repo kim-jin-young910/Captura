@@ -13,14 +13,9 @@ namespace Captura.ViewModels
 
         public IEnumerable<FileNameFormatGroup> FormatGroups { get; } = new []
         {
-            new FileNameFormatGroup("Time", new []
+            new FileNameFormatGroup("barcode", new []
             {
-                new FileNameFormatItem("%HH%", "Hours (24 hr) (20)"),
-                new FileNameFormatItem("%hh%", "Hours (12 hr) (08)"),
-                new FileNameFormatItem("%mm%", "Minutes (58)"),
-                new FileNameFormatItem("%ss%", "Seconds (54)"),
-                new FileNameFormatItem("%tt%", "AM / PM"),
-                new FileNameFormatItem("%zzz%", "Time Zone (+05:30)")
+                new FileNameFormatItem("%cc%", "number"),                
             }),
             new FileNameFormatGroup("Year", new []
             {
